@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Registration Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="main-header">THE CODE REVIEW</h1>
+    <div class="header-div">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+  </header>
+  <div class="hr-line"></div>
+
+  <form action="index.html" method="post">
+    <div class="content-container">
+      <fieldset class="contact">
+        <legend>Contact Information</legend>
+
+        <div class="flex-item">
+          <label class="label-t" for="full-name">Full Name</label>
+          <input type="text" placeholder="Required" id="full-name" name="user_full_name" required />
+        </div>
+
+        <div class="flex-item">
+          <label for="mail">Email Address</label>
+          <input type="email" placeholder="Required" id="mail" name="user_email" required />
+        </div>
+
+        <div class="flex-item">
+          <label for="number">Phone Number</label>
+          <input type="tel" placeholder="Optional" id="number" name="user_phone_number" />
+        </div>
+
+        <div class="flex-item">
+          <label for="street">Street Address</label>
+          <input type="text" placeholder="Optional" id="street" name="user_street" />
+        </div>
+
+        <div class="flex-item">
+          <label for="city">City</label>
+          <input type="text" placeholder="Optional" id="city" name="user_city" />
+        </div>
+
+        <div class="flex-item">
+          <label for="state">State</label>
+          <select id="state" name="user_state">
+            <option value="ohio">Ohio</option>
+            <option value="indiana">Indiana</option>
+            <option value="michigan">Michigan</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="west_virginia">West Virginia</option>
+          </select>
+        </div>
+
+        <div class="flex-item">
+          <label for="zip">Zip Code</label>
+          <input type="number" id="zipcode" name="user_zip_code" />
+        </div>
+      </fieldset>
+
+      <fieldset class="newsletter">
+        <legend>Newsletter</legend>
+
+        <label>Select the newsletter you would like to receive</label>
+        <input type="checkbox" id="html" value="html_news" name="user_news" /><label class="label-news" for="html">HTML
+          News</label><br />
+        <input type="checkbox" id="css" value="css_news" name="user_news" /><label class="label-news" for="css">CSS
+          News</label><br />
+        <input type="checkbox" id="javascript" value="javascript_news" name="user_news" /><label class="label-news"
+          for="javascript">JavaScript News</label>
+
+        <label>Newsletter format</label>
+        <input type="radio" id="html-format" value="html" name="user_newsletter_format" /><label class="label-news"
+          for="html-format">HTML</label> <br />
+        <input type="radio" id="plain-text-format" value="plain_text" name="user_newsletter_format" /><label
+          class="label-news" for="plain-text-format">Plain text</label>
+
+        <label for="topics">Other topics you'd like to hear about</label>
+        <textarea id="topics" placeholder="Optional" name="user_topics"></textarea>
+      </fieldset>
+
+      <button type="submit">Sign up</button>
+    </div>
+  </form>
+
+  <footer class="main-footer">
+    <p>Copyright The Code Review</p>
+  </footer>
+</body>
+
+</html>

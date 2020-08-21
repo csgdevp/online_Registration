@@ -1,0 +1,222 @@
+/* Main styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Rose', cursive;
+  padding: 0.1px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  color: rgb(114, 112, 112);
+  font-size: 1em;
+}
+
+/* Class related styles*/
+
+.main-header {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0;
+  padding: 15px;
+  background: rgb(26, 43, 61);
+  color: white;
+}
+
+.header-div {
+  margin: auto;
+  width: 95%;
+  text-align: center;
+  padding: 0 10px 20px 10px;
+  border-bottom: 4px solid rgb(59, 59, 59);
+  margin-bottom: 2px;
+}
+
+.hr-line {
+  border-top: 1px solid rgb(121, 119, 119);
+  width: 95%;
+  margin: auto;
+  padding-top: 30px;
+  margin-top: 3px;
+}
+
+.content-container {
+  margin: 0 auto;
+  padding: 15px;
+  width: 95%;
+  background: rgb(218, 220, 223);
+}
+
+.contact {
+  border-bottom: 2px solid rgb(58, 56, 56);
+  margin-bottom: 35px;
+}
+
+.newsletter {
+  margin-top: 20px;
+}
+
+.label-news {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.main-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* FORM STYLES */
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 17px;
+  color: rgb(112, 112, 112);
+}
+
+legend {
+  margin-bottom: 15px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 15px 40px;
+  color: #FFF;
+  background-color: green;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 30px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="city"] {
+  background: white;
+  font-family: 'Red Rose', cursive;
+  border: none;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: 0;
+  width: 100%;
+  color: initial;
+  margin-bottom: 20px;
+  padding-right: 0;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+/* PSEUDO*/
+
+textarea:focus,
+input:focus {
+  border: 1.5px rgb(52, 50, 56) solid;
+  background: #8fd1f0;
+  transition-duration: 1s;
+  transform: scale(1.05);
+}
+
+button:hover {
+  background: rgb(75, 212, 86);
+  transition-duration: 1s;
+}
+
+textarea::placeholder,
+input::placeholder {
+  text-align: right;
+  padding-right: 15px;
+}
+
+select:focus {
+  background: #8fd1f0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+  /* BASE STYLES */
+
+  body {
+    max-width: 1150px;
+    margin: auto;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  /* flexbox styles && class styles */
+
+  .flex-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-item input,
+  select {
+    width: 75%;
+  }
+
+  .flex-item input#zipcode {
+    margin-right: 45%;
+  }
+
+  .flex-item label {
+    font-size: 15px;
+    margin-top: 10px
+  }
+
+
+  #zipcode {
+    width: 30%;
+  }
+
+  .header-div,
+  .hr-line {
+    width: 70%;
+  }
+
+  .content-container {
+    width: 70%;
+  }
+
+}
